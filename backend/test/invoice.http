@@ -1,0 +1,87 @@
+@invoiceId = 60b65b91e32626511ce61283
+@projectName = Pandion
+
+###
+GET https://localhost:443/invoices/readInvoice
+
+###
+POST https://localhost:443/invoices/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJUVEwiOiI2MDAiLCJpYXQiOjE2MjUwNzMwNDMsImV4cCI6MTYyNjY5ODcxNjA4OH0.BbyRl9P85sqy3VeINNM7SIsGtG_spGm9x4uniquY118
+Content-Type: application/json
+
+{
+  "projectName": "Pandion",  
+  "merchant": "Bär & Ollenroth KG Brandenburg Fachgroßhandel f. Haustechnik",
+  "invoiceNr": "5209282",
+  "issuedOn": "10.01.2020",
+  "file": "./endpoints/fileUpload/UploadedFiles/temp/gfhrtRG_195_131013_5214227.pdf",
+  "items": [
+  {
+    "invoiceId": "",
+    "description": "Uebergangsbogen Raxofix 20mm x  3/4\" AG 90 Grad, Siliziumbronze, m.Pressanschl.",
+    "merchantArticleId": "RAFUB2020A",
+    "grossPrice": "10.0000",
+    "basisQuantity": "1.0000",
+    "discountPercent": 0.441,
+    "reducedItemPrice": "9.59",
+    "basisQuantityForDiscount": "1.0000",
+    "billedQuantity": "40",
+    "subtotal": "223.60",
+    "vatPercent": "0.19",
+    "totalWithTax": 266.084
+  },
+  {
+    "invoiceId": "",
+    "description": "Uebergangsstueck Raxofix 20mm x  1/2\"AG Siliziumbronze, m.Pressanschluss",
+    "merchantArticleId": "RAFUS2015A",
+    "grossPrice": "8.1000",
+    "basisQuantity": "1.0000",
+    "discountPercent": 0.442,
+    "reducedItemPrice": "8.52",
+    "basisQuantityForDiscount": "1.0000",
+    "billedQuantity": "20",
+    "subtotal": "90.40",
+    "vatPercent": "0.19",
+    "totalWithTax": 107.57600000000001,
+    "offeredPrice" : 2.50
+  }
+  ],
+  "projectDescription": "Pandion Viva (362WE) 4Living",
+  "currency": "EUR",
+  "subtotal": "314.00",
+  "vatPercent": "0.19",
+  "vatTotal": "59.66",
+  "total": "373.66"
+}
+
+###
+
+GET https://localhost:443/projects/
+
+###
+
+GET https://localhost:443/invoices/
+
+###
+
+GET https://localhost:443/invoices/{{invoiceId}}
+
+###
+
+GET https://localhost:443/invoices/invoicesOfProject/{{projectName}}
+
+
+###
+
+PUT https://localhost:443/invoices/{{invoiceId}}
+Content-Type: application/json
+
+{                
+    "projectName": "Ulfd"                                                                                
+}
+
+###
+DELETE https://localhost:443/invoices/{{invoiceId}}
+
+###
+GET https://localhost:443/invoices/search?searchInvoice=3

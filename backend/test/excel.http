@@ -1,0 +1,16 @@
+###
+GET https://localhost:443/excel/Some
+
+###
+GET https://localhost:443/excel/files/Pandion
+
+
+###
+GET https://localhost:443/excel/Pandion
+
+###
+GET https://localhost:443/excel/download/2021_06_22_Some.xlsx?projectName=Some&type=Excel
+
+###
+DELETE https://localhost:443/excel/delete/NAME/2021_07_06_122551_NAME.xlsx
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJUVEwiOiI2MDAiLCJpYXQiOjE2MjUwNzMwNDMsImV4cCI6MTYyNjY5ODcxNjA4OH0.BbyRl9P85sqy3VeINNM7SIsGtG_spGm9x4uniquY118

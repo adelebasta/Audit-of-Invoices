@@ -1,0 +1,3 @@
+###
+DELETE https://localhost:443/projects/NAME
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJUVEwiOiI2MDAiLCJpYXQiOjE2MjUwNzMwNDMsImV4cCI6MTYyNjY5ODcxNjA4OH0.BbyRl9P85sqy3VeINNM7SIsGtG_spGm9x4uniquY118

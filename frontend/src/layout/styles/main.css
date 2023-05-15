@@ -1,0 +1,982 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700";
+body {
+  font-family: "Montserrat", sans-serif !important;
+  color: #414347 !important;
+  background-color: #f5f5f5;
+}
+
+li {
+  font-family: "Montserrat";
+  font-size: 0.8em;
+
+}
+
+#edit-li {
+overflow-wrap: break-word!important;
+width: 10em!important;
+
+}
+
+.body-login {
+
+  background-color: #e5e5e5 !important;
+}
+
+/* PasswordChange View */
+
+.info-section {
+  text-align: center !important;
+  margin-bottom: 4em !important;
+  display: block;
+}
+
+.info-text {
+  padding-top: 3em !important;
+}
+
+.info-text-hd {
+  color: #09388a !important;
+}
+
+.pw-form-section {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+@media only screen and (max-width: 1263px) {
+  #center-form {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+
+  .pw-form-section {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  .div-btn-confirm-pw {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 550%) !important;
+  }
+
+  .error-similar-password {
+
+    width: 200%!important;
+  
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 400%)!important;
+  
+  }
+
+}
+
+.fg-error-similar-password {
+  padding-bottom: 3em!important;
+
+}
+
+.error-similar-password {
+  width: 200%!important;
+  
+  padding-top: 0.4em !important;
+
+  color: red !important;
+  font-size: small !important;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 200%);
+
+}
+
+.div-btn-confirm-pw {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 350%);
+}
+
+.btn-confirm-pw {
+ 
+  width: 14.75em !important;
+  height: 2.688em !important;
+
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(11, 67, 164, 100%) !important;
+
+  color: #ffffff !important;
+  font-size: 0.95em !important;
+  background-color: #0b43a4 !important;
+
+
+}
+
+.btn-confirm-pw:hover {
+  background-color: #09388a !important;
+  border-color: #09388a !important;
+}
+
+.btn-confirm-pw:disabled {
+  background-color: #b6b6b6 !important;
+  border-color: #b6b6b6 !important;
+}
+
+/* Headerinhalte */
+
+.navbar-edit {
+  background-color: #ededed !important;
+  height: 2.375em !important;
+  padding-bottom: 3em !important;
+}
+
+.navbar-brand {
+  position: absolute !important;
+  color: #414347 !important;
+  font-weight: 600;
+  font-size: 0.8em !important;
+  padding-left: 3em !important;
+
+  border: none;
+}
+
+.nav-div {
+  margin-top: 0.4em !important;
+  display: inline-flex;
+}
+
+/*Screengrößeabhänigkeiten */
+
+#branding {
+  visibility: hidden !important;
+}
+
+.branding-icon {
+  position: absolute !important;
+  width: 2.1em !important;
+  height: 2.5em !important;
+
+  transform: translate(3em, -0.4em);
+}
+
+.close-icon-only {
+  width: 0.9em !important;
+  height: 0.9em !important;
+}
+
+@media only screen and (max-width: 740px) {
+  #branding {
+    visibility: visible !important;
+  }
+
+  .navbar-brand {
+    display: none !important;
+  }
+
+  .logout {
+    display: none !important;
+  }
+}
+
+.search {
+  margin-left: 40% !important;
+  position: absolute !important;
+  top: 20% !important;
+}
+
+.div-search {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+
+  display: inline-flex !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(100, 103, 108, 29%) !important;
+  border-radius: 0.125em !important;
+  width: 100%;
+  background: #ffffff !important;
+  height: 1.5em !important;
+  width: 18.99em !important;
+}
+
+.button-search {
+  width: 2em !important;
+  border: none !important;
+  background: none !important;
+}
+
+.search-icon {
+  position: absolute !important;
+  top: 20% !important;
+  left: 3% !important;
+  width: 0.8em !important;
+  height: 0.8em !important;
+}
+
+.input-edit {
+  position: absolute !important;
+  top: 9% !important;
+  left: 10% !important;
+  padding-left: 0.5em !important;
+  color: #414347 !important;
+  font-size: 0.8em !important;
+  border: none !important;
+  width: 100%;
+  background: none !important;
+  height: 1.5em !important;
+  width: 21.5em !important;
+}
+
+/* Search View */
+
+.no-searchResult {
+  position: absolute !important;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%);
+}
+
+.div-searchResult {
+
+  padding-left: 2em !important;
+  padding-right: 2em !important;
+  padding-bottom: 2em !important;
+}
+
+.searchResult {
+
+  margin-bottom: -1em!important;
+  position: absolute !important;
+  left: 50%;
+  top: 15%;
+
+  transform: translate(-50%, -60%);
+}
+
+/*Logout Link in Header */
+
+.div-close {
+  position: absolute;
+  right: 0 !important;
+  margin-right: 0 !important;
+
+  padding-right: 3em !important;
+}
+
+.close-icon {
+  width: 0.99em !important;
+  height: 0.99em !important;
+}
+
+.logout {
+  color: #414347 !important;
+  text-decoration: none !important;
+  font-size: 0.8em !important;
+  border: none;
+  background-color: transparent !important;
+}
+
+/* Seiteninhalte */
+
+.container {
+  padding-top: 5em !important;
+}
+
+/* Button für hinzufügen Rechnung generieren Projekt */
+
+.pointer-edit {
+  cursor: pointer !important;
+}
+
+.div-btn-description {
+  position: absolute !important;
+  top: 7em !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -30%) !important;
+
+  text-align: center;
+
+  width: 6.313em !important;
+  height: 4.875em !important;
+  background-color: #ededed !important;
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(237, 237, 237, 100%) !important;
+}
+
+.button-add:hover {
+  width: 6.313em !important;
+  height: 4.875em !important;
+  color: #d2d2d2 !important;
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(237, 237, 237, 100%) !important;
+}
+
+.div-add-button {
+  padding-top: -0.01em !important;
+  position: absolute !important;
+
+  width: 6.313em !important;
+  height: 4.875em !important;
+}
+
+#file {
+  visibility: hidden !important;
+  cursor: pointer !important;
+}
+
+.button-text-add {
+  font-size: 0.688em;
+  padding-top: 2.85em !important;
+}
+
+/* Button für Projekt generieren */
+
+.button-download {
+  width: 6.313em !important;
+  height: 4.875em !important;
+  color: #ededed !important;
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(237, 237, 237, 100%) !important;
+}
+
+.button-download:hover {
+  width: 6.313em !important;
+  height: 4.875em !important;
+  color: #d2d2d2 !important;
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(237, 237, 237, 100%) !important;
+}
+
+.plus-icon {
+  width: 1.823em !important;
+  height: 1.823em !important;
+  padding-bottom: 0.2em !important;
+}
+
+.download-icon {
+  width: 1.823em !important;
+  height: 1.823em !important;
+}
+
+.button-text {
+  font-size: 0.688em;
+  padding-top: 1em !important;
+}
+
+/* Breadcrumbs Navigation */
+
+#breadcrumb-item {
+  color: #64676c !important;
+  text-decoration: none;
+}
+
+#breadcrumb-item:hover {
+  color: rgba(11, 67, 164, 100%) !important;
+  text-decoration: none;
+}
+
+.active {
+  font-weight: 600 !important;
+  color: #414347 !important;
+}
+
+.breadcrumb-item::before {
+  font-weight: normal !important;
+}
+
+/* Ordnerstruktur Projekte */
+
+.folder {
+  padding-left: 0em !important;
+  padding-top: 2em !important;
+  list-style: none !important;
+  display: flex !important;
+
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: space-between !important;
+}
+
+.div-project {
+  text-align: center !important;
+  flex-basis: 30% !important;
+  padding: 1em!important;
+}
+
+#div-project-inner-folder {
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #ededed;
+  border-radius: 30%;
+
+  border-style: none!important;
+
+  position: absolute !important;
+  transform: translate(-100%, 0%);
+  z-index: auto !important;
+
+}
+
+/* Löschen Icon auf docIcon und excelIcon Platzierung */
+#div-project-inner {
+  width: 2em !important;
+  height: 2em !important;
+  background-color: #ededed;
+  border-radius: 30%;
+
+  border-style: none!important;
+
+  position: absolute !important;
+  transform: translate(260%, -48%);
+  z-index: auto !important;
+}
+
+/* Löschen Icon auf docIcon Größe und Farbe */
+.delete-icon {
+  width: 1em !important;
+  height: 1em !important;
+
+  transform: translateY(-7.5%);
+  z-index: 3 !important;
+}
+
+.div-project > button {
+  border: none;
+  background-color: #ffffff00;
+}
+
+.folder-icon {
+  width: 6.25em !important;
+  height: 6.25em !important;
+}
+
+/* Rechnungen in IncoiceFolderView */
+
+.doc-icon {
+  width: 5em !important;
+  height: 5em !important;
+}
+
+li.docName {
+  padding-top: 0.7em;
+}
+
+/* ExelDatein in excFolderView*/
+
+.exc-icon {
+  width: 5em !important;
+  height: 5em !important;
+}
+
+li.excName {
+  padding-top: 0.7em;
+}
+
+/* Login Modal */
+
+.contact-support {
+  color: #0b43a4 !important;
+  font-size: small !important;
+  cursor: pointer !important;
+
+  text-decoration: none;
+}
+
+.contact-support:hover {
+  color: #09388a !important;
+
+}
+
+.invalid-password {
+  padding-top: 0.4em !important;
+  margin-bottom: -2em !important;
+
+  color: red !important;
+  font-size: small !important;
+}
+
+.invalid-password > .invalid-pw {
+  border-color: red !important;
+}
+
+.modal-dialog {
+  width: 200% !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+  margin: auto auto !important;
+}
+
+.modal-edit {
+  text-align: center !important;
+  border-radius: 0.188em !important;
+  border-color: #ededed !important;
+  box-shadow: 0.188em 0.188em 0.188em rgba(0, 0, 0, 0.1);
+}
+
+.logo-image {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.form-control {
+  text-align: center !important;
+  display: inline !important;
+  border-radius: none !important;
+}
+
+.form-control:focus::placeholder {
+  color: transparent !important;
+}
+
+.form-login-input {
+  margin-top: 1.5em !important;
+  margin-left: 2em !important;
+  margin-right: 2em !important;
+  margin-bottom: 1em !important;
+}
+
+.btn {
+  background-color: #0b43a4 !important;
+  color: #ffffff !important;
+  font-size: 0.875em !important;
+  border-radius: 0.125em !important;
+}
+
+.btn-block {
+  margin-top: 1em !important;
+  width: 31em !important;
+  border: none;
+  border-radius: 0.125em !important;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* ContactSupport View */
+
+.popUp-contact {
+  text-align: center !important;
+  padding: 2em;
+  background: #f5f5f5;
+  border-radius: 0.125em;
+  width: 35em !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.support-adress {
+  font-weight: 600 !important;
+}
+
+.btn-cancle-contact {
+  width: 20em !important;
+}
+
+.btn-cancle-contact:hover {
+  background-color: #09388a !important;
+}
+
+/* Spinner in loading */
+
+.spinner-edit {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  text-align: center !important;
+
+  transform: translate(-50%, -50%);
+}
+
+.spinner-background {
+  background-color: white!important;
+}
+
+.spinner-border {
+  color: #0b43a4 !important;
+  width: 15em !important;
+  height: 15em !important;
+}
+
+.spinner-text {
+  font-size: 0.75em !important;
+  padding-top: 2em !important;
+  position: absolute !important;
+  text-align: center !important;
+
+  top: 50% !important;
+  left: 50% !important;
+
+  transform: translate(-50%);
+}
+
+/* editInvoiceView */
+
+.btn-danger {
+  width: 9.9em !important;
+  height: 2.688em !important;
+
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: #f15642 !important;
+
+  color: #ffffff !important;
+  font-size: 0.95em !important;
+  background-color: #f15642 !important;
+  margin: auto;
+  margin-top: 1em !important;
+}
+
+.btn-danger:hover {
+  background-color: #db4e3b !important;
+  border-color: #db4e3b !important;
+}
+
+/*.error-message {
+  font-size: 0.7em;
+  font-weight: 400!important;
+  color:#F15642!important;
+
+}
+*/
+
+.project-name::placeholder {
+  color: #f15642 !important;
+}
+
+.project-name:focus::placeholder {
+  color: transparent !important;
+}
+
+#project-name-field {
+  width: 18em !important;
+}
+
+.conCanButtonGroup {
+  margin: auto !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+
+  margin-top: 3em !important;
+  margin-bottom: 2em !important;
+}
+
+.button-confirm-div {
+  margin-right: 1em;
+}
+
+.button-confirm {
+  width: 14.75em !important;
+  height: 2.688em !important;
+
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: rgba(11, 67, 164, 100%) !important;
+
+  color: #ffffff !important;
+  font-size: 0.95em !important;
+  background-color: #0b43a4 !important;
+  margin: auto;
+}
+
+.button-confirm:hover {
+  background-color: #09388a !important;
+  border-color: #09388a !important;
+}
+
+.button-confirm:disabled {
+  background-color: #b6b6b6 !important;
+  border-color: #b6b6b6 !important;
+}
+
+.button-cancel-div {
+  margin-left: 1em;
+}
+
+.button-cancel {
+  width: 14.75em !important;
+  height: 2.688em !important;
+
+  border-radius: 0.188em !important;
+
+  border: 0.013em solid !important;
+  border-color: #a40b0b !important;
+
+  color: #ffffff !important;
+  font-size: 0.95em !important;
+  background-color: #a40b0b !important;
+  margin: auto;
+}
+
+.button-cancel:hover {
+  background-color: #8a0b0b !important;
+  border-color: #a40b0b !important;
+}
+
+.container-edit {
+  padding-top: 1em !important;
+}
+.section-datainfo {
+  padding-top: 1em !important;
+  display: inline-flex !important;
+}
+
+.first-section {
+  display: block;
+}
+
+.second-section {
+  display: block !important;
+}
+
+.third-section {
+  display: inline-flex !important;
+  margin-top: 2em;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+}
+
+div.form-group {
+  float: left !important;
+  margin-top: 1em !important;
+  margin-right: 1em !important;
+  margin-left: 0em !important;
+}
+
+.field__label {
+  display: block !important;
+  font-size: 0.8em !important;
+  font-weight: 600;
+
+  text-align: left !important;
+}
+
+.field__list {
+  padding-left: 0 !important;
+  list-style: none;
+}
+
+.field__input {
+  display: block !important;
+
+  margin-top: 1em !important;
+
+  font-size: 0.75em !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+
+  border: none !important;
+  background-color: #ededed !important;
+  width: 12.5em !important;
+  height: 2.5em !important;
+}
+
+.field__input__short {
+  display: block !important;
+
+  margin-top: 0.5em !important;
+
+  font-size: 0.75em !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+
+  border: none !important;
+  background-color: #ededed !important;
+  width: 11em !important;
+  height: 2.5em !important;
+}
+
+.field__input__long {
+  display: block !important;
+
+  margin-top: 1em !important;
+
+  font-size: 0.75em !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+
+  border: none !important;
+  background-color: #ededed !important;
+  width: 25em !important;
+  height: 2.5em !important;
+}
+
+/*PopUP "Wirklich löschen" */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popUp {
+  text-align: center !important;
+
+  padding: 2em;
+  background: #f5f5f5;
+  border-radius: 0.125em;
+  width: 30em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.popUp-headline {
+  font-size: larger !important;
+  font-weight: 600 !important;
+}
+
+.section-button-popUp {
+  padding-top: 2em !important;
+  display: inline-block !important;
+}
+
+.btn-delete-popUp {
+  width: 9.4em !important;
+  background-color: #a40b0b !important;
+}
+
+.btn-delete-popUp:hover {
+  background-color: #8a0b0b !important;
+}
+
+.devider {
+  width: 3em !important;
+  height: auto;
+  display: inline-block;
+}
+
+.btn-cancle-popUp {
+  width: 9.4em !important;
+}
+
+.btn-cancle-popUp:hover {
+  width: 9.4em !important;
+  background-color: #09388a !important;
+}
+
+/* warning modal */
+
+.section-headline {
+  margin-top: 2em !important;
+  font-weight: 600;
+}
+
+.section-content {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+}
+
+.section-button {
+  margin-bottom: 2em;
+}
+
+.btn-leaveSite {
+  background-color: #ededed !important;
+  color: #64676c !important;
+  font-size: 0.875em !important;
+  border-radius: 0.125em !important;
+  margin-right: 1em;
+}
+
+.btn-cancel {
+  margin-left: 1em;
+  font-size: 0.875em;
+}
+
+/* Footer */
+
+.link_footer {
+  color: #414347;
+  margin: 3em !important;
+  text-decoration: none;
+
+  font-weight: 100;
+  font-size: smaller;
+}
+
+.link_footer:hover {
+  color: #09388a !important;
+}
+
+/*footer {
+  position: absolute !important;
+  top: 100% !important;
+  left: 50% !important;
+
+  transform: translate(-50%, -50%) !important;
+
+  width: 100%;
+  text-align: center;
+}*/
+
+footer {
+  position: absolute !important;
+  top: 90% !important;
+  left: 50% !important;
+  margin: auto;
+  transform: translate(-50%, -50%) !important;
+
+  width: 100%;
+  text-align: center;
+}
+
+/*Impressum*/
+
+.construction-section {
+  text-align: center !important;
+  margin-bottom: 4em !important;
+  display: block;
+
+  min-height: 100% !important;
+  /* margin: 0 auto -50px !important; */
+  height: auto !important;
+}
+
+.construction-img {
+  padding-top: 2em !important;
+  width: 30em;
+  height: auto;
+}
+
+.construction-cc {
+  color: #64676c !important;
+  font-size: smaller !important;
+}

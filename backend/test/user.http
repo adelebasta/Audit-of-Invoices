@@ -1,0 +1,16 @@
+###
+POST https://localhost:443/sessions/login
+Content-Type: application/json
+
+{
+    "password":"FakturaAuto"
+}
+
+###
+PUT https://localhost:443/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJUVEwiOiI2MDAiLCJpYXQiOjE2MjUwODAzOTgsImV4cCI6MTYyNjcwNTQ3ODgwNn0.jui6rDOadXwyhIICfFOWq2PTC5oEj0JAAyVn2h0WUG0
+Content-Type: application/json
+
+{
+    "password":"NewPassword"
+}

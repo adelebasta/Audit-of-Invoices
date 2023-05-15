@@ -1,0 +1,37 @@
+@itemId = 60b0ec0de55fe72539bcc2ab
+
+@invoiceId = 1
+###
+POST https://localhost:443/items/
+Content-Type: application/json
+
+{
+    "description": "testItem4"                                        
+}
+
+###
+
+GET https://localhost:443/items
+
+###
+
+GET https://localhost:443/items/itemsOfInvoice/{{invoiceId}}
+
+###
+
+# get item by id
+GET https://localhost:443/items/{{itemId}}
+
+###
+
+PUT https://localhost:443/items/{{itemId}}
+Content-Type: application/json
+
+{                
+    "description": "Ulfd"                                                                                
+}
+
+###
+
+DELETE https://localhost:443/items/{{itemId}}
+

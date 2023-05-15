@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Stylesheet stylesheet -->
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css" />
+
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon16.jpg"
+    />
+
+    <title>FakturaAutomata</title>
+  </head>
+
+  <body>
+    <main class="page-main">
+      <nav class="navbar navbar-edit navbar-light">
+        <!--Branding-->
+        <a class="navbar-brand" href="#">FakturaAutomata</a>
+
+        <!--Searchbar-->
+        <div class="div-search">
+          <button class="button-search">
+            <img class="search-icon" src="../images/loupe.png" alt="search" />
+          </button>
+          <form class="form-edit" action="action_page.php">
+            <input
+              class="input-edit"
+              type="text"
+              placeholder="Projekt 1 durchsuchen"
+              name="search"
+            />
+          </form>
+        </div>
+
+        <!--Logout-->
+        <div class="div-close">
+          <img class="close-icon" src="../images/close.png" alt="logout" />
+          <a class="logout" href="#">Anwendung schließen </a>
+        </div>
+      </nav>
+
+      <!--Button-->
+      <div class="container">
+        <div class="div-btn-description">
+          <button class="button-confirm">Rechnung bestätigen</button>
+        </div>
+      </div>
+
+      <!--Breadcrumbs -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Alle Projekte</li>
+            <li class="breadcrumb-item">Projekt 1</li>
+            <li class="breadcrumb-item">Rechnungen</li>
+            <li class="breadcrumb-item active">Rechnung 1</li>
+          </ol>
+        </nav>
+      </div>
+
+      <div class="container container-edit">
+        <!--Projektname und Projektbeschreibung-->
+        <div class="section-datainfo first-section">
+          <div class="field__input-wrapper">
+            <label class="field__label">Projektname</label>
+            <input class="field__input" type="text" />
+          </div>
+          <div class="field__input-wrapper">
+            <label class="field__label">Projektbeschreibung</label>
+            <input class="field__input__long" type="text" />
+          </div>
+        </div>
+
+        <!--Projektinformationen-->
+
+        <div class="section-datainfo second-section">
+          <div class="field__input-wrapper">
+            <label class="field__label">Rechnungssteller</label>
+            <input class="field__input" type="text" />
+          </div>
+          <div class="field__input-wrapper">
+            <label class="field__label">Rechnungsnummer</label>
+            <input class="field__input" type="text" />
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Rechnungsdatum</label>
+            <input class="field__input" type="text" />
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Einlesedatum</label>
+            <input class="field__input" type="text" />
+          </div>
+        </div>
+
+        <!--Rechnungsdetails-->
+
+        <div class="section-datainfo third-section">
+          <div class="field__input-wrapper">
+            <label class="field__label">Artikelnummer</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">EAN</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Stückzahl</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Stückkosten</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Kosten gesamt</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Angebotspreis Stk</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+
+          <div class="field__input-wrapper">
+            <label class="field__label">Angebotspreis ges.</label>
+            <ul class="field__list">
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+              <li><input class="field__input__short" type="text" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

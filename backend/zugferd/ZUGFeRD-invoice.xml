@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:CrossIndustryDocument xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:12"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:15"
+    xmlns:rsm="urn:ferd:CrossIndustryDocument:invoice:1p0">
+    <rsm:SpecifiedExchangedDocumentContext>
+        <ram:TestIndicator>
+            <udt:Indicator>true</udt:Indicator>
+        </ram:TestIndicator>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID>urn:ferd:CrossIndustryDocument:invoice:1p0:extended</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:SpecifiedExchangedDocumentContext>
+    <rsm:HeaderExchangedDocument>
+        <ram:ID>5209277</ram:ID> <!-- Rechnungsnr. -->
+        <ram:Name>RECHNUNG</ram:Name>
+        <ram:TypeCode>380</ram:TypeCode>
+        <ram:IssueDateTime>
+            <udt:DateTimeString format="102">20200110</udt:DateTimeString> <!-- Rechnungsdatum -->
+        </ram:IssueDateTime>
+    </rsm:HeaderExchangedDocument>
+    <rsm:SpecifiedSupplyChainTradeTransaction>
+        <ram:ApplicableSupplyChainTradeAgreement>
+            <ram:BuyerReference>Pandion Viva (362WE) 4Living</ram:BuyerReference> <!-- Käuferreferenz bzw. Projekt -->
+            <ram:SellerTradeParty>
+                <ram:Name>Bär &amp; Ollenroth KG Brandenburg Fachgroßhandel f. Haustechnik</ram:Name>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>Fr. Carus              PO</ram:PersonName>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>12063</ram:PostcodeCode>
+                    <ram:CityName>Berlin</ram:CityName>
+                    <ram:CountryID>DE</ram:CountryID>
+                </ram:PostalTradeAddress>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="VA">DE251519176</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+            </ram:SellerTradeParty>
+            <ram:BuyerTradeParty>
+                <ram:ID>131013</ram:ID>
+                <ram:Name>Gas Neumann Versorgungstechnik GmbH</ram:Name>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>15741</ram:PostcodeCode>
+                    <ram:LineOne>Hauptstr. 86</ram:LineOne>
+                    <ram:CityName>Bestensee</ram:CityName>
+                    <ram:CountryID>DE</ram:CountryID>
+                </ram:PostalTradeAddress>
+            </ram:BuyerTradeParty>
+        </ram:ApplicableSupplyChainTradeAgreement>
+        <ram:ApplicableSupplyChainTradeDelivery>
+            <ram:ShipToTradeParty>
+                <ram:Name>Pandion FA Gas Neumann</ram:Name>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>10407</ram:PostcodeCode>
+                    <ram:LineOne>Paul-Heyse-Str. 25</ram:LineOne>
+                    <ram:CityName>Berlin</ram:CityName>
+                    <ram:CountryID>DE</ram:CountryID>
+                </ram:PostalTradeAddress>
+            </ram:ShipToTradeParty>
+            <ram:ActualDeliverySupplyChainEvent>
+                <ram:OccurrenceDateTime>
+                    <udt:DateTimeString format="102">20200110</udt:DateTimeString>
+                </ram:OccurrenceDateTime>
+            </ram:ActualDeliverySupplyChainEvent>
+            <ram:DeliveryNoteReferencedDocument>
+                <ram:IssueDateTime>2020-01-10T00:00:00</ram:IssueDateTime>
+                <ram:ID>40181965-134</ram:ID>
+            </ram:DeliveryNoteReferencedDocument>
+        </ram:ApplicableSupplyChainTradeDelivery>
+        <ram:ApplicableSupplyChainTradeSettlement>
+            <ram:PaymentReference>5209277</ram:PaymentReference> <!--Zahlungsreferenz = Rechnungsnr. ?-->
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:PayeePartyCreditorFinancialAccount>
+                    <ram:IBANID>DE03100700000084079300</ram:IBANID>
+                </ram:PayeePartyCreditorFinancialAccount>
+                <ram:PayeeSpecifiedCreditorFinancialInstitution>
+                    <ram:BICID>DEUTDEBBXXX</ram:BICID>
+                    <ram:Name>Deutsche Bank AG</ram:Name>
+                </ram:PayeeSpecifiedCreditorFinancialInstitution>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount currencyID="EUR">59.66</ram:CalculatedAmount>
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:BasisAmount currencyID="EUR">314.00</ram:BasisAmount>
+                <ram:CategoryCode>S</ram:CategoryCode>
+                <ram:ApplicablePercent>19.00</ram:ApplicablePercent> <!--MwSt. für gesamte Rechnung-->
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradePaymentTerms>
+                <ram:Description>Zahlbar bis 17.03.2020 ohne Abzug</ram:Description>
+                <ram:DueDateDateTime>
+                    <udt:DateTimeString format="102">20200317</udt:DateTimeString>
+                </ram:DueDateDateTime>
+            </ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradePaymentTerms>
+                <ram:Description>Zahlbar bis 31.01.2020  3,00% Skt= 362,45</ram:Description>
+                <ram:DueDateDateTime>
+                    <udt:DateTimeString format="102">20200131</udt:DateTimeString>
+                </ram:DueDateDateTime>
+                <ram:ApplicableTradePaymentDiscountTerms>
+                    <ram:BasisAmount currencyID="EUR">373.66</ram:BasisAmount>
+                    <ram:CalculationPercent>3.00</ram:CalculationPercent>
+                </ram:ApplicableTradePaymentDiscountTerms>
+            </ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradeSettlementMonetarySummation>
+                <ram:LineTotalAmount currencyID="EUR">314.00</ram:LineTotalAmount> <!--Rechnung Zwischensumme-->
+                <ram:ChargeTotalAmount currencyID="EUR">0.00</ram:ChargeTotalAmount>
+                <ram:AllowanceTotalAmount currencyID="EUR">0.00</ram:AllowanceTotalAmount>
+                <ram:TaxBasisTotalAmount currencyID="EUR">314.00</ram:TaxBasisTotalAmount> <!--Zwischensumme bzw. Wert für MwSt.-Berechnung-->
+                <ram:TaxTotalAmount currencyID="EUR">59.66</ram:TaxTotalAmount> <!--berechnete MwSt. für Rechnung-->
+                <ram:GrandTotalAmount currencyID="EUR">373.66</ram:GrandTotalAmount> <!--Rechnung Endsumme-->
+            </ram:SpecifiedTradeSettlementMonetarySummation>
+        </ram:ApplicableSupplyChainTradeSettlement>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>40181965-134-765000</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedSupplyChainTradeAgreement>
+                <ram:GrossPriceProductTradePrice>
+                    <ram:ChargeAmount currencyID="EUR">10.0000</ram:ChargeAmount> <!--Basis-Stückpreis-->
+                    <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity> <!--Stückzahl für den der Preis gilt-->
+                    <ram:AppliedTradeAllowanceCharge>
+                        <ram:ChargeIndicator>
+                            <udt:Indicator>false</udt:Indicator>
+                        </ram:ChargeIndicator>
+                        <ram:BasisAmount currencyID="EUR">10.0000</ram:BasisAmount> <!-- Stückpreis für Rabattberechnung-->
+                        <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity> <!--Stückzahl für Rabattberechnung-->
+                        <ram:ActualAmount currencyID="EUR">4.4100</ram:ActualAmount> <!--Abzug bzw. Rabatt in € pro Stück-->
+                        <ram:ReasonCode>DI</ram:ReasonCode>
+                        <ram:Reason>Rabatt</ram:Reason>
+                    </ram:AppliedTradeAllowanceCharge>
+                </ram:GrossPriceProductTradePrice>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount currencyID="EUR">5.5900</ram:ChargeAmount> <!--Preis nach Rabatt für Summe-->
+                    <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity> <!--Preis nach Rabatt für Summe-->
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedSupplyChainTradeAgreement>
+            <ram:SpecifiedSupplyChainTradeDelivery>
+                <ram:BilledQuantity unitCode="C62">40.0000</ram:BilledQuantity> <!--Stückzahl für Summe-->
+            </ram:SpecifiedSupplyChainTradeDelivery>
+            <ram:SpecifiedSupplyChainTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:ApplicablePercent>19.00</ram:ApplicablePercent> <!--MwSt. für Artikel-->
+                </ram:ApplicableTradeTax>
+                <ram:SpecifiedTradeSettlementMonetarySummation>
+                    <ram:LineTotalAmount currencyID="EUR">223.60</ram:LineTotalAmount> <!--Endsumme dieses Artikels-->
+                </ram:SpecifiedTradeSettlementMonetarySummation>
+            </ram:SpecifiedSupplyChainTradeSettlement>
+            <ram:SpecifiedTradeProduct>
+                <ram:SellerAssignedID>RAFUB2020A</ram:SellerAssignedID> <!--Händler-Artikel-ID-->
+                <ram:Name>Uebergangsbogen Raxofix 20mm x  3/4" AG 90 Grad, Siliziumbronze, m.Pressanschl.</ram:Name> <!--Artikelbeschreibung-->
+            </ram:SpecifiedTradeProduct>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>40181965-134-777000</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedSupplyChainTradeAgreement>
+                <ram:GrossPriceProductTradePrice>
+                    <ram:ChargeAmount currencyID="EUR">8.1000</ram:ChargeAmount>
+                    <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity>
+                    <ram:AppliedTradeAllowanceCharge>
+                        <ram:ChargeIndicator>
+                            <udt:Indicator>false</udt:Indicator>
+                        </ram:ChargeIndicator>
+                        <ram:BasisAmount currencyID="EUR">8.1000</ram:BasisAmount>
+                        <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity>
+                        <ram:ActualAmount currencyID="EUR">3.5800</ram:ActualAmount>
+                        <ram:ReasonCode>DI</ram:ReasonCode>
+                        <ram:Reason>Rabatt</ram:Reason>
+                    </ram:AppliedTradeAllowanceCharge>
+                </ram:GrossPriceProductTradePrice>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount currencyID="EUR">4.5200</ram:ChargeAmount>
+                    <ram:BasisQuantity unitCode="C62">1.0000</ram:BasisQuantity>
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedSupplyChainTradeAgreement>
+            <ram:SpecifiedSupplyChainTradeDelivery>
+                <ram:BilledQuantity unitCode="C62">20.0000</ram:BilledQuantity>
+            </ram:SpecifiedSupplyChainTradeDelivery>
+            <ram:SpecifiedSupplyChainTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:ApplicablePercent>19.00</ram:ApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:SpecifiedTradeSettlementMonetarySummation>
+                    <ram:LineTotalAmount currencyID="EUR">90.40</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementMonetarySummation>
+            </ram:SpecifiedSupplyChainTradeSettlement>
+            <ram:SpecifiedTradeProduct>
+                <ram:SellerAssignedID>RAFUS2015A</ram:SellerAssignedID>
+                <ram:Name>Uebergangsstueck Raxofix 20mm x  1/2"AG Siliziumbronze, m.Pressanschluss</ram:Name>
+            </ram:SpecifiedTradeProduct>
+        </ram:IncludedSupplyChainTradeLineItem>
+    </rsm:SpecifiedSupplyChainTradeTransaction>
+</rsm:CrossIndustryDocument>

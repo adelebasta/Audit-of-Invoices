@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Stylesheet stylesheet -->
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css" />
+
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Favicon-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/favicon16.jpg"
+    />
+
+    <title>FakturaAutomata</title>
+  </head>
+
+  <body>
+    <main class="page-main">
+      <nav class="navbar navbar-edit navbar-light">
+        <!--Branding-->
+        <a class="navbar-brand" href="#">FakturaAutomata</a>
+
+        <!--Searchbar-->
+        <div class="div-search">
+          <button class="button-search">
+            <img class="search-icon" src="../images/loupe.png" alt="search" />
+          </button>
+          <form class="form-edit" action="action_page.php">
+            <input
+              class="input-edit"
+              type="text"
+              placeholder="Projekte durchsuchen"
+              name="search"
+            />
+          </form>
+        </div>
+
+        <!--Logout-->
+        <div class="div-close">
+          <img class="close-icon" src="../images/close.png" alt="logout" />
+          <a class="logout" href="#">Anwendung schließen </a>
+        </div>
+      </nav>
+
+      <!--Button-->
+      <div class="container">
+        <div class="div-btn-description">
+          <button class="button-add">
+            <img class="plus-icon" src="../images/plus.png" alt="add" />
+          </button>
+          <p class="button-text">Rechnung hinzufügen</p>
+        </div>
+      </div>
+
+      <!--Breadcrumbs -->
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active">
+              Alle Projekte
+            </li>
+          </ol>
+        </nav>
+
+        <!--Folder-->
+        <nav aria-label="folder ">
+          <ul class="folder">
+            <!--Project 1-->
+            <div class="div-project">
+              <button>
+                <img
+                  class="folder-icon"
+                  src="../images/folder.png"
+                  alt="logout"
+                />
+              </button>
+              <li class="folderName" aria-current="p1">Projekt 1</li>
+            </div>
+
+            <!--Project 2-->
+            <div class="div-project">
+              <button>
+                <img
+                  class="folder-icon"
+                  src="../images/folder.png"
+                  alt="logout"
+                />
+              </button>
+              <li class="folderName" aria-current="p2">Projekt 2</li>
+            </div>
+            <!--Project 3-->
+            <div class="div-project">
+              <button>
+                <img
+                  class="folder-icon"
+                  src="../images/folder.png"
+                  alt="logout"
+                />
+              </button>
+              <li class="folderName" aria-current="p3">Projekt 3</li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </main>
+  </body>
+</html>
